@@ -12,7 +12,7 @@ from langchain.schema.output_parser import StrOutputParser
 # # Create embeddingsclear
 embeddings = OllamaEmbeddings(model="nomic-embed-text", show_progress=True)
 
-db = Chroma(persist_directory="./db",
+db = Chroma(persist_directory="./db-hormozi",
             embedding_function=embeddings)
 
 # # Create retriever
